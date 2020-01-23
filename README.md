@@ -1,8 +1,5 @@
-# Template for simple pages
+# FirAds trading landing website
+
+Simply coded in HTML.
 
 Uses Laravel Mix.
-
-Prepared: 
-- scss
-- js
-- browser-sync

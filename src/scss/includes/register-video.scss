@@ -1,0 +1,15 @@
+#video-wrapper {
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    width: 721px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 746px;
+  }
+}
+
+#video {
+  width: 100%;
+}

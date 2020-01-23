@@ -1,0 +1,84 @@
+#claim {
+  background: black;
+  text-align: center;
+
+  .claim-inner {
+    padding: 100px 0 225px 0;
+    background-image: url("/img/claim.png");
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-position: 50% 0;
+
+    @media (min-width: 576px) {
+      padding: 110px 0 230px 0;
+    }
+
+    @media (min-width: 992px) {
+      padding: 150px 0 250px 0;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 180px 0 325px 0;
+    }
+
+    @media (min-width: 1600px) {
+      padding: 190px 0 335px 0;
+    }
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+
+  #h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+
+    @media (min-width: 576px) {
+      font-size: 42px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 42px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
+  }
+
+  #h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #fff;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 30px;
+    }
+  }
+
+  .underscored {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: 15px;
+      background: $primary;
+      z-index: -1;
+
+      @media (min-width: 576px) {
+        height: 17px;
+      }
+    }
+  }
+}

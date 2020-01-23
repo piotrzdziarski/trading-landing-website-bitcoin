@@ -1,1 +1,1 @@
-import './bootstrap';
+require('./includes/video-control');

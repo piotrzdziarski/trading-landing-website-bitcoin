@@ -1,8 +1,24 @@
-@import "./demo.scss";
+@import "variables";
+@import "global/buttons";
+@import "global/flex";
+@import "global/headers";
+@import "global/positions";
+@import "global/text";
+@import "global/widths";
+@import "components/container";
+@import "includes/claim";
+@import "includes/register";
+@import "includes/cards";
+@import "includes/surnames";
 
 body {
   margin: 0;
   padding: 0;
+  color: #a3a3a3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+
+  height: 400vh;
 }
 
 * {
