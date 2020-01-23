@@ -10,6 +10,7 @@
 @import "includes/register";
 @import "includes/cards";
 @import "includes/surnames";
+@import "includes/faq";
 
 body {
   margin: 0;
@@ -17,8 +18,7 @@ body {
   color: #a3a3a3;
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
-
-  height: 400vh;
+  overflow-x: hidden;
 }
 
 * {
