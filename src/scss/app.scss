@@ -6,11 +6,14 @@
 @import "global/text";
 @import "global/widths";
 @import "components/container";
+@import "components/form";
+@import "components/modal";
 @import "includes/claim";
 @import "includes/register";
 @import "includes/cards";
 @import "includes/surnames";
 @import "includes/faq";
+@import "includes/footer";
 
 body {
   margin: 0;

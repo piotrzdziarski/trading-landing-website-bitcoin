@@ -1,0 +1,144 @@
+.footer {
+  background: $primary;
+
+  .backgrounder {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 50px 0;
+    background-size: auto 100% !important;
+    background-position: -40% 0 !important;
+    background-repeat: no-repeat !important;
+
+    @media (min-width: 768px) {
+      padding: 60px 0;
+    }
+
+    @media (min-width: 1200px) {
+      background: url("../img/footer.png");
+    }
+
+    @media (min-width: 1600px) {
+      padding: 70px 0;
+      background-position: unset !important;
+    }
+  }
+
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 900px;
+      margin: 0 20px 0 0;
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1050px;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+
+
+    @media (min-width: 576px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 36px;
+    }
+  }
+
+  .line {
+    @media (min-width: 1200px) {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  .steps {
+    margin-top: 40px;
+
+    @media (min-width: 992px) {
+      margin-top: 50px;
+    }
+  }
+
+  .step {
+    margin-bottom: 30px;
+    color: #000;
+
+    @media (min-width: 768px) {
+      margin-bottom: unset;
+      width: calc(33.33% - 16.66px);
+    }
+
+    &:last-child {
+      margin-bottom: unset;
+    }
+  }
+
+  .gap {
+    @media (min-width: 768px) {
+      width: 20px;
+    }
+
+    @media (min-width: 992px) {
+      width: 25px;
+    }
+  }
+
+  .number-outer {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: 3px dashed #000;
+  }
+
+  .number {
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .gap-step {
+    width: 20px;
+
+    @media (min-width: 768px) {
+      width: 15px;
+    }
+
+    @media (min-width: 992px) {
+      width: 20px;
+    }
+  }
+
+  .text-block {
+    width: calc(100% - 110px);
+
+    @media (min-width: 768px) {
+      width: calc(100% - 105px);
+    }
+
+    @media (min-width: 992px) {
+      width: calc(100% - 110px);
+    }
+  }
+
+  .title {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+  }
+
+  p {
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

@@ -10,196 +10,517 @@
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
-<section id="claim">
-    <div class="claim-inner">
+<main>
+    <div class="component-modal">
         <div class="container">
-            <h1 id="h1">
-                Korzystaj z bitcoin <span class="text-primary">nawet</span> w przypadku
-                awarii <span class="text-primary">rynków kryptowalut</span>.
-            </h1>
-            <h2 id="h2">
-                <span class="underscored">Dołącz już dziś</span> i zobacz, jak wiele <br> możesz zarobić
-            </h2>
-        </div>
-    </div>
-</section>
-<section class="section-register">
-    <div class="container flex-centered">
-        <div id="video-wrapper">
-            <iframe
-                src="https://player.vimeo.com/video/22439234"
-                id="video"
-                frameBorder="0"
-                allow="autoplay; fullscreen"
-                allowFullScreen>
-            </iframe>
-        </div>
-        <div class="gap"></div>
-        <form action="" id="form">
-            <div class="header-wrapper flex-centered flex-column">
-                <span class="header-bold">Zarejestruj się poniżej</span>
-                <span class="header-thin">przeprowadzimy Cię przez procedurę rejestracji.</span>
+            <div class="close-wrapper">
+                <div class="close"></div>
             </div>
-            <div id="form-inner">
-                <div class="flex-centered">
-                    <div class="input-wrapper">
-                        <label for="name" class="label">Twoje imię</label>
-                        <input id="name" class="input" type="text">
-                    </div>
-                    <div class="divider-input"></div>
-                    <div class="input-wrapper">
-                        <label for="surname" class="label">Twoje nazwisko</label>
-                        <input id="surname" class="input" type="text">
-                    </div>
-                </div>
-
-                <div class="input-wrapper w-100-i">
-                    <label for="email" class="label">Twój adres e-mail</label>
-                    <input id="email" class="input" type="email">
-                </div>
-
-                <div class="flex-centered">
-                    <div class="input-wrapper">
-                        <label for="phone" class="label">Numer telefonu</label>
-                        <input id="phone" class="input" type="text">
-                    </div>
-                    <div class="divider-input"></div>
-                    <div class="input-wrapper">
-                        <label for="password" class="label">Twoje hasło</label>
-                        <input id="password" class="input" type="password">
+            <form action="" class="form">
+                <div class="header-outer flex-centered flex-column">
+                    <div class="header-inner">
+                        <div class="header-bold">Zostań z nami!</div>
+                        <div class="header-thin">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy
+                            text ever since the 1500s
+                        </div>
                     </div>
                 </div>
+                <div class="form-inner">
+                    <div class="flex-centered">
+                        <div class="input-wrapper">
+                            <label for="modal-name" class="label">Twoje imię</label>
+                            <input id="modal-name" class="input" type="text">
+                        </div>
+                        <div class="divider-input"></div>
+                        <div class="input-wrapper">
+                            <label for="modal-surname" class="label">Twoje nazwisko</label>
+                            <input id="modal-surname" class="input" type="text">
+                        </div>
+                    </div>
 
-                <div class="policy-wrapper flex-started">
-                    <label id="policy-label" class="flex-centered" for="policy-checkbox">
-                        <input id="policy-checkbox" type="checkbox">
-                        <span id="checkbox-mock" class="flex-centered">
-                                <span id="check"></span>
+                    <div class="input-wrapper w-100-i">
+                        <label for="modal-email" class="label">Twój adres e-mail</label>
+                        <input id="modal-email" class="input" type="email">
+                    </div>
+
+                    <div class="flex-centered">
+                        <div class="input-wrapper">
+                            <label for="modal-phone" class="label">Numer telefonu</label>
+                            <input id="modal-phone" class="input" type="text">
+                        </div>
+                        <div class="divider-input"></div>
+                        <div class="input-wrapper">
+                            <label for="modal-password" class="label">Twoje hasło</label>
+                            <input id="modal-password" class="input" type="password">
+                        </div>
+                    </div>
+
+                    <div class="policy-wrapper flex-started">
+                        <label class="policy-label flex-centered" for="register-policy-checkbox">
+                            <input id="register-policy-checkbox" class="policy-checkbox" type="checkbox">
+                            <span class="checkbox-mock flex-centered">
+                                <span class="check"></span>
                             </span>
-                        <span class="text">
+                            <span class="text">
                                 Akceptuję <a href="#">warunki</a> oraz <a href="#">politykę prywatności</a>.
                             </span>
-                    </label>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="submit" type="submit">
+                    Rozpocznij teraz!
+                </button>
+            </form>
+        </div>
+    </div>
+    <section id="claim">
+        <div class="claim-inner">
+            <div class="container">
+                <h1 id="h1">
+                    Korzystaj z bitcoin <span class="text-primary">nawet</span> w przypadku
+                    awarii <span class="text-primary">rynków kryptowalut</span>.
+                </h1>
+                <h2 id="h2">
+                    <span class="underscored">Dołącz już dziś</span> i zobacz, jak wiele <br> możesz zarobić
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="section-register">
+        <div class="container flex-centered">
+            <div id="video-wrapper">
+                <iframe
+                    src="https://player.vimeo.com/video/22439234"
+                    id="video"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen>
+                </iframe>
+            </div>
+            <div class="gap"></div>
+            <form action="" class="form">
+                <div class="header-wrapper flex-centered flex-column">
+                    <span class="header-bold">Zarejestruj się poniżej</span>
+                    <span class="header-thin">przeprowadzimy Cię przez procedurę rejestracji.</span>
+                </div>
+                <div class="form-inner">
+                    <div class="flex-centered">
+                        <div class="input-wrapper">
+                            <label for="register-name" class="label">Twoje imię</label>
+                            <input id="register-name" class="input" type="text">
+                        </div>
+                        <div class="divider-input"></div>
+                        <div class="input-wrapper">
+                            <label for="register-surname" class="label">Twoje nazwisko</label>
+                            <input id="register-surname" class="input" type="text">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper w-100-i">
+                        <label for="register-email" class="label">Twój adres e-mail</label>
+                        <input id="register-email" class="input" type="email">
+                    </div>
+
+                    <div class="flex-centered">
+                        <div class="input-wrapper">
+                            <label for="register-phone" class="label">Numer telefonu</label>
+                            <input id="register-phone" class="input" type="text">
+                        </div>
+                        <div class="divider-input"></div>
+                        <div class="input-wrapper">
+                            <label for="register-password" class="label">Twoje hasło</label>
+                            <input id="register-password" class="input" type="password">
+                        </div>
+                    </div>
+
+                    <div class="policy-wrapper flex-started">
+                        <label class="policy-label flex-centered" for="register-policy-checkbox">
+                            <input id="register-policy-checkbox" class="policy-checkbox" type="checkbox">
+                            <span class="checkbox-mock flex-centered">
+                                <span class="check"></span>
+                            </span>
+                            <span class="text">
+                                Akceptuję <a href="#">warunki</a> oraz <a href="#">politykę prywatności</a>.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="submit" type="submit">
+                    Rozpocznij teraz!
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="section-cards">
+        <div class="container flex-centered">
+            <article class="card card-primary flex-centered flex-column">
+                <img src="/img/businessman.png" alt="Businessman SVG" />
+                <h3>Doradztwo eksperta</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                </p>
+            </article>
+            <div class="gap"></div>
+            <article class="card card-green flex-centered flex-column">
+                <img src="/img/laptop.png" alt="Businessman SVG" />
+                <h3>Nowoczesna technologia</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                </p>
+            </article>
+            <div class="gap"></div>
+            <article class="card card-brown flex-centered flex-column">
+                <img src="/img/money-bag.png" alt="Businessman SVG" />
+                <h3>Zarabiaj natychmiast!</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="surnames">
+        <div class="container">
+            <h2>
+                <span class="text-primary">Znane nazwiska</span> w handlu
+            </h2>
+            <div class="md-flex-centered">
+                <article class="flex-centered">
+                    <img src="/img/alexander-elder.jpg" alt="Alexander Elder" />
+                    <div class="gap"></div>
+                    <div class="block-text">
+                        <h4>
+                            <span class="text-primary">Alexander</span>
+                            <span class="letter-spaced">Elder</span>
+                        </h4>
+                        <div class="underscore"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.
+                        </p>
+                    </div>
+                </article>
+                <div class="gap-article"></div>
+                <article class="flex-centered">
+                    <img src="/img/ed-seykota.jpg" alt="Ed Seykota" />
+                    <div class="gap"></div>
+                    <div class="block-text">
+                        <h4>
+                            <span class="text-primary">Ed</span>
+                            <span class="letter-spaced">Seykota</span>
+                        </h4>
+                        <div class="underscore"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="md-flex-centered">
+                <article class="flex-centered">
+                    <img src="/img/william-o'neil.jpg" alt="William O'Neil" />
+                    <div class="gap"></div>
+                    <div class="block-text">
+                        <h4>
+                            <span class="text-primary">William</span>
+                            <span class="letter-spaced">O'Neil</span>
+                        </h4>
+                        <div class="underscore"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.
+                        </p>
+                    </div>
+                </article>
+                <div class="gap-article"></div>
+                <article class="article-last flex-centered">
+                    <img src="/img/warren-buffett.jpg" alt="Warren Buffet" />
+                    <div class="gap"></div>
+                    <div class="block-text">
+                        <h4>
+                            <span class="text-primary">Warren</span>
+                            <span class="letter-spaced">Buffett</span>
+                        </h4>
+                        <div class="underscore"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <img class="bitcoin" src="/img/bitcoin.png" alt="Bitcoin Vertical" />
+    </section>
+    <section class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div id="collapse">
+                <h4 class="toggler">Lorem Ipsum is simply dummy text of the printing<span
+                    class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="toggler">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <span class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="toggler">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <span class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="toggler">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <span class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="toggler">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <span class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <button id="submit" type="submit">
-                Rozpocznij teraz!
-            </button>
-        </form>
-    </div>
-</section>
-<section class="section-cards">
-    <div class="container flex-centered">
-        <article class="card card-primary flex-centered flex-column">
-            <img src="/img/businessman.png" alt="Businessman SVG" />
-            <h3>Doradztwo eksperta</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-        </article>
-        <div class="gap"></div>
-        <article class="card card-green flex-centered flex-column">
-            <img src="/img/laptop.png" alt="Businessman SVG" />
-            <h3>Nowoczesna technologia</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-        </article>
-        <div class="gap"></div>
-        <article class="card card-brown flex-centered flex-column">
-            <img src="/img/money-bag.png" alt="Businessman SVG" />
-            <h3>Zarabiaj natychmiast!</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-        </article>
-    </div>
-</section>
-<section class="surnames">
-    <div class="container">
-        <h2>
-            <span class="text-primary">Znane nazwiska</span> w handlu
-        </h2>
-        <div class="md-flex-centered">
-            <article class="flex-centered">
-                <img src="/img/alexander-elder.jpg" alt="Alexander Elder" />
-                <div class="gap"></div>
-                <div class="block-text">
-                    <h4>
-                        <span class="text-primary">Alexander</span>
-                        <span class="letter-spaced">Elder</span>
-                    </h4>
-                    <div class="underscore"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.
-                    </p>
-                </div>
-            </article>
-            <div class="gap-article"></div>
-            <article class="flex-centered">
-                <img src="/img/ed-seykota.jpg" alt="Ed Seykota" />
-                <div class="gap"></div>
-                <div class="block-text">
-                    <h4>
-                        <span class="text-primary">Ed</span>
-                        <span class="letter-spaced">Seykota</span>
-                    </h4>
-                    <div class="underscore"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.
-                    </p>
-                </div>
-            </article>
         </div>
-        <div class="md-flex-centered">
-            <article class="flex-centered">
-                <img src="/img/william-o'neil.jpg" alt="William O'Neil" />
+    </section>
+</main>
+<footer class="footer">
+    <div class="backgrounder">
+        <div class="container">
+            <h3>
+                <span class="line">
+                    <span class="text-black">Zarejestruj</span> się już dziś, aby zagwarantować
+                </span>
+                <span class="line">
+                    sobie miejsce i <span class="text-black">natychmiast</span> zacząć <span class="text-black">czerpać zyski</span>
+                </span>
+                <span class="line">
+                    za każdym razem, gdy ludzie używają bitcoina
+                </span>
+            </h3>
+            <div class="steps md-flex-centered">
+                <article class="step flex-centered">
+                    <div class="number-outer flex-centered">
+                        <div class="number">1</div>
+                    </div>
+                    <div class="gap-step"></div>
+                    <div class="text-block">
+                        <h6 class="title">Rejestracja</h6>
+                        <p class="p">
+                            Lorem Ipsum is simply dummy
+                            text of the printing and
+                            typesetting industry.
+                        </p>
+                    </div>
+                </article>
                 <div class="gap"></div>
-                <div class="block-text">
-                    <h4>
-                        <span class="text-primary">William</span>
-                        <span class="letter-spaced">O'Neil</span>
-                    </h4>
-                    <div class="underscore"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.
-                    </p>
-                </div>
-            </article>
-            <div class="gap-article"></div>
-            <article class="article-last flex-centered">
-                <img src="/img/warren-buffett.jpg" alt="Warren Buffet" />
+                <article class="step flex-centered">
+                    <div class="number-outer flex-centered">
+                        <div class="number">2</div>
+                    </div>
+                    <div class="gap-step"></div>
+                    <div class="text-block">
+                        <h6 class="title">Logowanie</h6>
+                        <p class="p">
+                            Lorem Ipsum is simply dummy
+                            text of the printing and
+                            typesetting industry.
+                        </p>
+                    </div>
+                </article>
                 <div class="gap"></div>
-                <div class="block-text">
-                    <h4>
-                        <span class="text-primary">Warren</span>
-                        <span class="letter-spaced">Buffett</span>
-                    </h4>
-                    <div class="underscore"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.
-                    </p>
-                </div>
-            </article>
+                <article class="step flex-centered">
+                    <div class="number-outer flex-centered">
+                        <div class="number">3</div>
+                    </div>
+                    <div class="gap-step"></div>
+                    <div class="text-block">
+                        <h6 class="title">Inwestycja</h6>
+                        <p class="p">
+                            Lorem Ipsum is simply dummy
+                            text of the printing and
+                            typesetting industry.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </div>
     </div>
-    <img class="bitcoin" src="/img/bitcoin.png" alt="Bitcoin Vertical" />
-</section>
-<section class="faq">
-
-</section>
+</footer>
 <script src="js/app.js"></script>
 </body>
 </html>

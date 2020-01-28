@@ -2,6 +2,7 @@
   position: relative;
   padding: 50px 0 175px 0;
   background: #f5f5f5;
+  overflow: hidden;
 
   @media (min-width: 576px) {
     padding: 60px 0 185px 0;
@@ -182,7 +183,10 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: -10px;
     width: 750px;
+    background-position: center;
+    overflow: hidden;
 
     @media (min-width: 576px) {
       width: 780px;
