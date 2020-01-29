@@ -4,25 +4,19 @@
 @import "global/headers";
 @import "global/positions";
 @import "global/text";
+@import "global/opacity";
+@import "global/overflows";
 @import "global/widths";
 @import "components/container";
 @import "components/form";
 @import "components/modal";
+@import "includes/body";
 @import "includes/claim";
 @import "includes/register";
 @import "includes/cards";
 @import "includes/surnames";
 @import "includes/faq";
 @import "includes/footer";
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #a3a3a3;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  overflow-x: hidden;
-}
 
 * {
   box-sizing: border-box;

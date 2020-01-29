@@ -10,10 +10,11 @@
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
+<div class="body-hoverer opacity-1"></div>
 <main>
-    <div class="component-modal">
+    <div id="modal-register" class="component-modal">
         <div class="container">
-            <div class="close-wrapper">
+            <div onclick="closeModal('modal-register')" class="modal-close-wrapper flex-centered">
                 <div class="close"></div>
             </div>
             <form action="" class="form">
@@ -59,11 +60,12 @@
                     </div>
 
                     <div class="policy-wrapper flex-started">
-                        <label class="policy-label flex-centered" for="register-policy-checkbox">
-                            <input id="register-policy-checkbox" class="policy-checkbox" type="checkbox">
+                        <label class="policy-label flex-centered" for="modal-policy-checkbox">
+                            <input id="modal-policy-checkbox" class="policy-checkbox" type="checkbox">
                             <span class="checkbox-mock flex-centered">
                                 <span class="check"></span>
                             </span>
+                            <span class="checkbox-gap"></span>
                             <span class="text">
                                 Akceptuję <a href="#">warunki</a> oraz <a href="#">politykę prywatności</a>.
                             </span>
@@ -143,6 +145,7 @@
                             <span class="checkbox-mock flex-centered">
                                 <span class="check"></span>
                             </span>
+                            <span class="checkbox-gap"></span>
                             <span class="text">
                                 Akceptuję <a href="#">warunki</a> oraz <a href="#">politykę prywatności</a>.
                             </span>
@@ -162,7 +165,8 @@
                 <img src="/img/businessman.png" alt="Businessman SVG" />
                 <h3>Doradztwo eksperta</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
                     et
                     dolore magna aliqua.
                 </p>
@@ -172,7 +176,8 @@
                 <img src="/img/laptop.png" alt="Businessman SVG" />
                 <h3>Nowoczesna technologia</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
                     et
                     dolore magna aliqua.
                 </p>
@@ -182,7 +187,8 @@
                 <img src="/img/money-bag.png" alt="Businessman SVG" />
                 <h3>Zarabiaj natychmiast!</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
                     et
                     dolore magna aliqua.
                 </p>
@@ -205,7 +211,8 @@
                         </h4>
                         <div class="underscore"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore
                             et dolore magna aliqua.
                         </p>
@@ -222,7 +229,8 @@
                         </h4>
                         <div class="underscore"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore
                             et dolore magna aliqua.
                         </p>
@@ -240,7 +248,8 @@
                         </h4>
                         <div class="underscore"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore
                             et dolore magna aliqua.
                         </p>
@@ -257,7 +266,8 @@
                         </h4>
                         <div class="underscore"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore
                             et dolore magna aliqua.
                         </p>
@@ -277,65 +287,34 @@
                 <div class="content">
                     <div class="content-inner">
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
                             been
                             the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
                             of
                             type
                             and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
                             the
                             leap
                             into electronic typesetting, remaining essentially unchanged.
                         </p>
 
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
                             been
                             the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
                             of
                             type
                             and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                            the
-                            leap
-                            into electronic typesetting, remaining essentially unchanged.
-                            This is quite obviously the best of all the creatures. My one true love.
-                        </p>
-                    </div>
-                </div>
-
-                <h4 class="toggler">
-                    Lorem Ipsum is simply dummy text of the printing
-                    <span class="expand-collapse"></span>
-                </h4>
-                <div class="content">
-                    <div class="content-inner">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been
-                            the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of
-                            type
-                            and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                            the
-                            leap
-                            into electronic typesetting, remaining essentially unchanged.
-                        </p>
-
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been
-                            the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of
-                            type
-                            and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
                             the
                             leap
                             into electronic typesetting, remaining essentially unchanged.
@@ -351,65 +330,34 @@
                 <div class="content">
                     <div class="content-inner">
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
                             been
                             the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
                             of
                             type
                             and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
                             the
                             leap
                             into electronic typesetting, remaining essentially unchanged.
                         </p>
 
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
                             been
                             the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
                             of
                             type
                             and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                            the
-                            leap
-                            into electronic typesetting, remaining essentially unchanged.
-                            This is quite obviously the best of all the creatures. My one true love.
-                        </p>
-                    </div>
-                </div>
-
-                <h4 class="toggler">
-                    Lorem Ipsum is simply dummy text of the printing
-                    <span class="expand-collapse"></span>
-                </h4>
-                <div class="content">
-                    <div class="content-inner">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been
-                            the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of
-                            type
-                            and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                            the
-                            leap
-                            into electronic typesetting, remaining essentially unchanged.
-                        </p>
-
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been
-                            the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of
-                            type
-                            and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
                             the
                             leap
                             into electronic typesetting, remaining essentially unchanged.
@@ -425,28 +373,120 @@
                 <div class="content">
                     <div class="content-inner">
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
                             been
                             the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
                             of
                             type
                             and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
                             the
                             leap
                             into electronic typesetting, remaining essentially unchanged.
                         </p>
 
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
                             been
                             the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
                             of
                             type
                             and
-                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="toggler">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <span class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                            This is quite obviously the best of all the creatures. My one true love.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="toggler">
+                    Lorem Ipsum is simply dummy text of the printing
+                    <span class="expand-collapse"></span>
+                </h4>
+                <div class="content">
+                    <div class="content-inner">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been
+                            the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also
                             the
                             leap
                             into electronic typesetting, remaining essentially unchanged.

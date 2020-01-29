@@ -8,14 +8,70 @@
   padding: 20px 15px;
   width: 100%;
   height: 100%;
-  z-index: 3;
-  //visibility: hidden;
+  background: rgba(0, 0, 0, .8);
+  opacity: 0;
+  transition: opacity .3s;
+  visibility: hidden;
   overflow-y: auto;
+  z-index: 3;
 
   .container {
+    position: relative;
     padding: 10px;
     max-width: 459px;
     background: #fff;
+
+    @media (min-width: 576px) {
+      max-width: 479px;
+    }
+  }
+
+  .modal-close-wrapper {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $primary;
+    transition: background-color .2s;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($primary, 5%);
+    }
+  }
+
+  .close {
+    position: relative;
+    width: 10px;
+    height: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      background: #fff;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      background: #fff;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  .form {
+    width: 100% !important;
   }
 
   .header-outer {
@@ -26,10 +82,15 @@
   .header-inner {
     background: url("../img/claim.png");
     background-size: cover;
+    background-position: 50% 50%;
     padding: 20px 40px;
 
     @media (min-width: 576px) {
-      padding: 24px 48px;
+      padding: 40px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 50px 40px;
     }
   }
 
@@ -49,5 +110,13 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+  }
+
+  .form-inner {
+    padding: 20px 0 5px 0;
+
+    @media (min-width: 576px) {
+      padding: 20px 15px 5px 15px;
+    }
   }
 }

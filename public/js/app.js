@@ -112,19 +112,57 @@ var addToElementClassListIfNotContains = __webpack_require__(/*! ../helpers/addT
 
 var removeClassFromElementIfContains = __webpack_require__(/*! ../helpers/removeClassFromElementIfContains */ "./src/js/helpers/removeClassFromElementIfContains.js");
 
-var modals = document.getElementsByClassName('component-modal');
+var modalsOverlays = document.getElementsByClassName('component-modal');
+
+var scrollbarWidth = __webpack_require__(/*! ../services/scrollbar/getScrollbarWidth */ "./src/js/services/scrollbar/getScrollbarWidth.js")();
+
+var MODAL_OVERLAY_X_PADDING = 15;
 controlModalJustifyContent();
 addEventListener('resize', controlModalJustifyContent);
 
 function controlModalJustifyContent() {
-  for (var i = 0; i < modals.length; i++) {
+  for (var i = 0; i < modalsOverlays.length; i++) {
     // 40 pixels of .modal-component padding
-    if (modals[i].firstElementChild.getBoundingClientRect().height < innerHeight - 40) {
-      addToElementClassListIfNotContains(modals[i], 'align-items-center');
+    if (modalsOverlays[i].firstElementChild.getBoundingClientRect().height < innerHeight - 40) {
+      addToElementClassListIfNotContains(modalsOverlays[i], 'align-items-center');
     } else {
-      removeClassFromElementIfContains(modals[i], 'align-items-center');
+      removeClassFromElementIfContains(modalsOverlays[i], 'align-items-center');
     }
   }
+}
+
+window.openModal = function (modalId) {
+  var modal = document.getElementById(modalId);
+  document.body.style.overflow = 'hidden';
+  document.body.style.marginRight = scrollbarWidth + 'px';
+  modal.style.opacity = '1';
+  modal.style.visibility = 'unset';
+};
+
+window.closeModal = function (modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.opacity = '0'; // 15 pixels is default modal overlay padding - better look on mobile
+
+  modal.style.paddingLeft = scrollbarWidth + MODAL_OVERLAY_X_PADDING + 'px';
+  document.body.style.overflow = 'unset';
+  document.body.style.marginRight = '0';
+  setTimeout(function () {
+    modal.style.paddingLeft = "".concat(MODAL_OVERLAY_X_PADDING, "px");
+    modal.style.visibility = 'hidden';
+  }, 300);
+}; // control closing modals when clicking in overlay
+
+
+var _loop = function _loop(i) {
+  modalsOverlays[i].onclick = function (e) {
+    if (e.target === modalsOverlays[i]) {
+      closeModal(e.target.id);
+    }
+  };
+};
+
+for (var i = 0; i < modalsOverlays.length; i++) {
+  _loop(i);
 }
 
 /***/ }),
@@ -226,6 +264,39 @@ addEventListener('resize', controlVideoHeight);
 function controlVideoHeight() {
   video.style.height = video.offsetWidth * 0.56 + 'px';
 }
+
+/***/ }),
+
+/***/ "./src/js/services/scrollbar/getScrollbarWidth.js":
+/*!********************************************************!*\
+  !*** ./src/js/services/scrollbar/getScrollbarWidth.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var scrollbarWidth;
+
+module.exports = function () {
+  if (scrollbarWidth) {
+    return scrollbarWidth;
+  }
+
+  var outer = document.createElement('div');
+  var outerStyle = outer.style;
+  outerStyle.visibility = "hidden";
+  outerStyle.width = "100px";
+  outerStyle.msOverflowStyle = "scrollbar";
+  outerStyle.overflow = "scroll";
+  var inner = document.createElement('div');
+  inner.style.width = '100%';
+  document.body.appendChild(outer);
+  var widthNoScroll = outer.offsetWidth;
+  outer.appendChild(inner);
+  var widthWithScroll = inner.offsetWidth;
+  document.body.removeChild(outer);
+  scrollbarWidth = widthNoScroll - widthWithScroll;
+  return scrollbarWidth;
+};
 
 /***/ }),
 
