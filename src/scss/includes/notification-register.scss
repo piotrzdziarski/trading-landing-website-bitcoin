@@ -1,0 +1,57 @@
+#notification-register {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  padding: 15px 60px 15px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.66);
+  width: calc(100% - 30px);
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  z-index: 3;
+
+  @media (min-width: 576px) {
+    right: 22px;
+    left: unset;
+    width: auto;
+  }
+
+  &.slide-in {
+    animation: slide-in 4s;
+  }
+
+  @keyframes slide-in {
+    0% {
+      opacity: 1;
+      transform: translateX(400px);
+    }
+
+    14% {
+      transform: translateX(0px);
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .block-text {
+    margin-left: 15px;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00a651;
+  }
+}
+
+#notification-register-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -12,6 +12,7 @@
 @import "components/modal";
 @import "includes/body";
 @import "includes/claim";
+@import "includes/notification-register";
 @import "includes/register";
 @import "includes/cards";
 @import "includes/surnames";
@@ -20,4 +21,9 @@
 
 * {
   box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
 }

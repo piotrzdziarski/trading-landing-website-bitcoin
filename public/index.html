@@ -10,73 +10,82 @@
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
-<div class="body-hoverer opacity-1"></div>
-<main>
-    <div id="modal-register" class="component-modal">
-        <div class="container">
-            <div onclick="closeModal('modal-register')" class="modal-close-wrapper flex-centered">
-                <div class="close"></div>
-            </div>
-            <form action="" class="form">
-                <div class="header-outer flex-centered flex-column">
-                    <div class="header-inner">
-                        <div class="header-bold">Zostań z nami!</div>
-                        <div class="header-thin">
-                            Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy
-                            text ever since the 1500s
-                        </div>
+<div id="modal-register" class="component-modal">
+    <div class="container">
+        <div onclick="closeModal('modal-register')" class="modal-close-wrapper flex-centered">
+            <div class="close"></div>
+        </div>
+        <form action="" class="form">
+            <div class="header-outer flex-centered flex-column">
+                <div class="header-inner">
+                    <div class="header-bold">Zostań z nami!</div>
+                    <div class="header-thin">
+                        Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy
+                        text ever since the 1500s
                     </div>
                 </div>
-                <div class="form-inner">
-                    <div class="flex-centered">
-                        <div class="input-wrapper">
-                            <label for="modal-name" class="label">Twoje imię</label>
-                            <input id="modal-name" class="input" type="text">
-                        </div>
-                        <div class="divider-input"></div>
-                        <div class="input-wrapper">
-                            <label for="modal-surname" class="label">Twoje nazwisko</label>
-                            <input id="modal-surname" class="input" type="text">
-                        </div>
+            </div>
+            <div class="form-inner">
+                <div class="flex-centered">
+                    <div class="input-wrapper">
+                        <label for="modal-name" class="label">Twoje imię</label>
+                        <input id="modal-name" class="input" type="text">
                     </div>
-
-                    <div class="input-wrapper w-100-i">
-                        <label for="modal-email" class="label">Twój adres e-mail</label>
-                        <input id="modal-email" class="input" type="email">
+                    <div class="divider-input"></div>
+                    <div class="input-wrapper">
+                        <label for="modal-surname" class="label">Twoje nazwisko</label>
+                        <input id="modal-surname" class="input" type="text">
                     </div>
+                </div>
 
-                    <div class="flex-centered">
-                        <div class="input-wrapper">
-                            <label for="modal-phone" class="label">Numer telefonu</label>
-                            <input id="modal-phone" class="input" type="text">
-                        </div>
-                        <div class="divider-input"></div>
-                        <div class="input-wrapper">
-                            <label for="modal-password" class="label">Twoje hasło</label>
-                            <input id="modal-password" class="input" type="password">
-                        </div>
+                <div class="input-wrapper w-100-i">
+                    <label for="modal-email" class="label">Twój adres e-mail</label>
+                    <input id="modal-email" class="input" type="email">
+                </div>
+
+                <div class="flex-centered">
+                    <div class="input-wrapper">
+                        <label for="modal-phone" class="label">Numer telefonu</label>
+                        <input id="modal-phone" class="input" type="text">
                     </div>
+                    <div class="divider-input"></div>
+                    <div class="input-wrapper">
+                        <label for="modal-password" class="label">Twoje hasło</label>
+                        <input id="modal-password" class="input" type="password">
+                    </div>
+                </div>
 
-                    <div class="policy-wrapper flex-started">
-                        <label class="policy-label flex-centered" for="modal-policy-checkbox">
-                            <input id="modal-policy-checkbox" class="policy-checkbox" type="checkbox">
-                            <span class="checkbox-mock flex-centered">
+                <div class="policy-wrapper flex-started">
+                    <label class="policy-label flex-centered" for="modal-policy-checkbox">
+                        <input id="modal-policy-checkbox" class="policy-checkbox" type="checkbox">
+                        <span class="checkbox-mock flex-centered">
                                 <span class="check"></span>
                             </span>
-                            <span class="checkbox-gap"></span>
-                            <span class="text">
+                        <span class="checkbox-gap"></span>
+                        <span class="text">
                                 Akceptuję <a href="#">warunki</a> oraz <a href="#">politykę prywatności</a>.
                             </span>
-                        </label>
-                    </div>
+                    </label>
                 </div>
+            </div>
 
-                <button class="submit" type="submit">
-                    Rozpocznij teraz!
-                </button>
-            </form>
+            <button class="submit" type="submit">
+                Rozpocznij teraz!
+            </button>
+        </form>
+    </div>
+</div>
+<main>
+    <div id="notification-register" class="flex-centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+            <path fill="#00a651"
+                  d="M43 21.5C43 33.355 33.355 43 21.5 43S0 33.355 0 21.5 9.645 0 21.5 0 43 9.645 43 21.5zM18.812 32.019l13.994-13.994-3.8-3.8-10.194 10.194-4.818-4.82-3.8 3.801 8.618 8.62z" />
+        </svg>
+        <div class="block-text">
+            <div class="title">Rejestracja</div>
+            <div id="notification-register-name"></div>
         </div>
     </div>
     <section id="claim">
