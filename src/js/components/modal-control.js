@@ -32,18 +32,19 @@ function openModal(modalId) {
     const modal = document.getElementById(modalId);
     document.body.style.overflow = 'hidden';
     document.body.style.marginRight = scrollbarWidth + 'px';
-    modal.style.opacity = '1';
     modal.style.visibility = 'unset';
+    modal.style.opacity = 1;
 }
 
 window.closeModal = (modalId) => {
     const modal = document.getElementById(modalId);
-    modal.style.opacity = '0';
+    modal.classList.add('fade-out');
     document.body.style.marginRight = '0';
     document.body.style.overflow = 'unset';
 
     setTimeout(() => {
         modal.style.visibility = 'hidden';
+        modal.classList.remove('fade-out');
     }, 300);
 };
 

@@ -10,11 +10,23 @@
   height: 100%;
   background: rgba(0, 0, 0, .8);
   opacity: 0;
-  transition: opacity .3s;
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 4;
+
+  &.fade-out {
+    animation: fade-out .25s forwards;
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 
   .container {
     position: relative;
