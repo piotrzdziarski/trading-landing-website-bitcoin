@@ -18,5 +18,5 @@ function displayNotification() {
         notificationRegister.classList.remove('slide-in');
     }, 4000);
 
-    setTimeout(displayNotification, getRandomNumberFromRange(8000, 15000));
+    setTimeout(displayNotification, getRandomNumberFromRange(6000, 16000));
 }

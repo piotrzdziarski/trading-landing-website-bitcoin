@@ -29,6 +29,7 @@
     color: $primary;
     font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
     z-index: 2;
   }
 
@@ -39,7 +40,12 @@
     border: 1px solid #e7e7e7;
     color: #000;
     font-size: 13px;
+    transition: border .3s;
     z-index: 1;
+
+    &:hover {
+      border: 1px solid #a9e7ff;
+    }
 
     &:focus {
       border: 1px solid $primary;
@@ -56,14 +62,19 @@
   }
 
   .submit {
+    transition: background-color .2s;
     padding: 15px 0;
     border: none;
     width: 100%;
     background: $primary;
+    cursor: pointer;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    cursor: pointer;
+
+    &:hover {
+      background: darken($primary, 10%);
+    }
 
     &:focus {
       outline: 2px solid #dc9c2d;
@@ -73,6 +84,12 @@
   .policy-label {
     display: inline-flex;
     user-select: none;
+
+    &:hover {
+      .checkbox-mock {
+        border: 1px solid #a9e7ff;
+      }
+    }
   }
 
   .policy-checkbox {

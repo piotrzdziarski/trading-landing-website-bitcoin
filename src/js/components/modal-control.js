@@ -3,7 +3,7 @@ const removeClassFromElementIfContains = require('../helpers/removeClassFromElem
 const modalsOverlays = document.getElementsByClassName('component-modal');
 const scrollbarWidth = require('../services/scrollbar/getScrollbarWidth')();
 
-const MODAL_OVERLAY_X_PADDING = 15;
+let wasExitPopupShown = false;
 
 controlModalJustifyContent();
 addEventListener('resize', controlModalJustifyContent);
@@ -19,24 +19,30 @@ function controlModalJustifyContent() {
     }
 }
 
-window.openModal = (modalId) => {
+document.addEventListener('mouseleave', (e) => {
+    if (wasExitPopupShown) {
+        return;
+    }
+
+    wasExitPopupShown = true;
+    openModal('popup-exit');
+});
+
+function openModal(modalId) {
     const modal = document.getElementById(modalId);
     document.body.style.overflow = 'hidden';
     document.body.style.marginRight = scrollbarWidth + 'px';
     modal.style.opacity = '1';
     modal.style.visibility = 'unset';
-};
+}
 
 window.closeModal = (modalId) => {
     const modal = document.getElementById(modalId);
     modal.style.opacity = '0';
-    // 15 pixels is default modal overlay padding - better look on mobile
-    modal.style.paddingLeft = scrollbarWidth + MODAL_OVERLAY_X_PADDING + 'px';
-    document.body.style.overflow = 'unset';
     document.body.style.marginRight = '0';
+    document.body.style.overflow = 'unset';
 
     setTimeout(() => {
-        modal.style.paddingLeft = `${MODAL_OVERLAY_X_PADDING}px`;
         modal.style.visibility = 'hidden';
     }, 300);
 };

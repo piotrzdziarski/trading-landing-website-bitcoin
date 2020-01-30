@@ -6,13 +6,14 @@
   top: 0;
   left: 0;
   padding: 20px 15px;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: rgba(0, 0, 0, .8);
   opacity: 0;
   transition: opacity .3s;
   visibility: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
   z-index: 4;
 
   .container {
@@ -80,7 +81,7 @@
   }
 
   .header-inner {
-    background: url("../img/claim.png");
+    background: url("../img/claim.jpg");
     background-size: cover;
     background-position: 50% 50%;
     padding: 20px 40px;
